@@ -1,14 +1,15 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { ReferenceRoutingModule } from './reference-routing.module';
-import { ReferenceComponent } from './reference.component';
+import {ReferenceRoutingModule} from './reference-routing.module';
+import {ReferenceComponent} from './reference.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    ReferenceRoutingModule
-  ],
-  declarations: [ReferenceComponent]
+    imports: [
+        CommonModule,
+        ReferenceRoutingModule
+    ],
+    declarations: [ReferenceComponent]
 })
-export class ReferenceModule { }
+export class ReferenceModule {
+}

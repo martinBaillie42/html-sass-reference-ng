@@ -1,13 +1,13 @@
-import { ReferenceModule } from './reference.module';
+import {ReferenceModule} from './reference.module';
 
 describe('ReferenceModule', () => {
-  let referenceModule: ReferenceModule;
+    let referenceModule: ReferenceModule;
 
-  beforeEach(() => {
-    referenceModule = new ReferenceModule();
-  });
+    beforeEach(() => {
+        referenceModule = new ReferenceModule();
+    });
 
-  it('should create an instance', () => {
-    expect(referenceModule).toBeTruthy();
-  });
+    it('should create an instance', () => {
+        expect(referenceModule).toBeTruthy();
+    });
 });
