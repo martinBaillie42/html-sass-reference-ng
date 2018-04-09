@@ -1,0 +1,14 @@
+.to-set-the-background-color {
+    display: inline-block; // ensure that container wraps around select box
+    background-color: lightgrey;
+
+    select {
+        background: transparent;
+        border-color: grey;
+        -webkit-appearance: none; // remove chrome styling
+        -webkit-border-radius: 0; // remove chrome rounded corners
+        line-height: 2.2rem;
+        text-indent: 0.3rem;
+        padding-right: 2.2rem;
+    }
+}
