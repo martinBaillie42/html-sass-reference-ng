@@ -3,9 +3,7 @@ import {Component, OnInit} from '@angular/core';
 @Component({
     selector: 'hsr-reference',
     template: `
-        <p>
-            reference works!
-        </p>
+        <h1>HTML and SASS reference</h1>
     `,
     styles: []
 })
