@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+$base-font-size-px: 10px;
+$base-font-size-rem: 1.6rem;
+
+html {
+    font-size: $base-font-size-px; // set base font-size in pixels
+}
+
+body, select {
+    font-size: $base-font-size-rem; // set base font size in rems
+}
