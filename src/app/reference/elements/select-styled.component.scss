@@ -1,14 +1,31 @@
-.to-set-the-background-color {
+.select-wrapper {
     display: inline-block; // ensure that container wraps around select box
-    background-color: lightgrey;
+    position: relative;
+
+    label {
+        margin-right: 0.3em;
+        display: inline-block;
+        line-height: 1.4em;
+    }
 
     select {
-        background: transparent;
+        line-height: 1.4em;
+        background-color: lightgrey;
         border-color: grey;
         -webkit-appearance: none; // remove chrome styling
         -webkit-border-radius: 0; // remove chrome rounded corners
-        line-height: 2.2rem;
-        text-indent: 0.3rem;
-        padding-right: 2.2rem;
+        padding-left: 0.3em;
+        padding-right: 1.8em;
+    }
+
+    i {
+        line-height: 1.4em;
+        width: 1.4em;
+        background-color: grey;
+        text-align: center;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        pointer-events: none; // enables click through to the select box
     }
 }

@@ -1,11 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'assets/fontawesome.css';
+
+// Define font-face fonts. Advice is only bother with WOFF and WOFF2.
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: normal;
+    src: url("assets/webfonts/fa-brands-400.woff2") format("woff2"), url("assets/webfonts/fa-brands-400.woff") format("woff"), url("assets/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/webfonts/fa-regular-400.woff2") format("woff2"), url("assets/webfonts/fa-regular-400.woff") format("woff"), url("assets/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+.far {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    src: url("assets/webfonts/fa-solid-900.woff2") format("woff2"), url("assets/webfonts/fa-solid-900.woff") format("woff"), url("assets/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+.fa,
+.fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
 $base-font-size-px: 10px;
 $base-font-size-rem: 1.6rem;
 
-html {
-    font-size: $base-font-size-px; // set base font-size in pixels
+* {
+    box-sizing: border-box;
 }
 
+html {
+    font-size: $base-font-size-px; // set base font-size in pixels
+    font-family: sans-serif; // Helvetica on Mac, Arial on PC.
+}
+
+// Font size normalization. Required on select because Chrome on Mac gives it a smaller font size to keep the
+// surrounding box the same size as the normal sized text.
 body, select {
     font-size: $base-font-size-rem; // set base font size in rems
 }
