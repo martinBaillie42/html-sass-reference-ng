@@ -5,6 +5,7 @@ import {Component, OnInit} from '@angular/core';
     template: `
         <h1>HTML and SASS reference</h1>
         <hsr-select-styled></hsr-select-styled>
+        <hsr-modal></hsr-modal>
     `,
     styles: []
 })
