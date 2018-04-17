@@ -1,3 +1,11 @@
-<p>
-  modal works!
-</p>
+<div>
+    <button (click)="open = true">OPEN MODAL</button>
+</div>
+
+<div class="modal-container" *ngIf="open">
+    <div class="modal">
+        <h2>Modal title</h2>
+        <p>Modal text</p>
+        <button (click)="open = false">CLOSE</button>
+    </div>
+</div>

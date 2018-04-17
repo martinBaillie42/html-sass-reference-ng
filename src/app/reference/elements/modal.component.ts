@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'hsr-modal',
-  templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.scss']
+    selector: 'hsr-modal',
+    templateUrl: './modal.component.html',
+    styleUrls: ['./modal.component.scss']
 })
 export class ModalComponent implements OnInit {
 
-  constructor() { }
+    public open: boolean;
 
-  ngOnInit() {
-  }
+    constructor() {
+    }
+
+    ngOnInit() {
+        this.open = false;
+    }
 
 }
