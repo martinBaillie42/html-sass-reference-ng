@@ -3,8 +3,8 @@ import {Component, OnInit} from '@angular/core';
 @Component({
     selector: 'hsr-select-styled',
     template: `
+        <label for="the-id-of-the-selector">Pick a number</label>
         <div class="select-wrapper">
-            <label for="the-id-of-the-selector">Pick a number</label>
             <select id="the-id-of-the-selector">
                 <option>Select your number</option>
                 <option>One</option>

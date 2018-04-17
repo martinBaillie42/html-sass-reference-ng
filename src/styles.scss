@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'assets/fontawesome.css';
-
+@import 'assets/variables';
 // Define font-face fonts. Advice is only bother with WOFF and WOFF2.
 @font-face {
     font-family: 'Font Awesome 5 Brands';
@@ -35,9 +35,6 @@
     font-weight: 900;
 }
 
-$base-font-size-px: 10px;
-$base-font-size-rem: 1.6rem;
-
 * {
     box-sizing: border-box;
 }
@@ -45,6 +42,11 @@ $base-font-size-rem: 1.6rem;
 html {
     font-size: $base-font-size-px; // set base font-size in pixels
     font-family: sans-serif; // Helvetica on Mac, Arial on PC.
+}
+
+input, select, textarea, button, label, span, p,
+i, .fa, .fas, .far, .fal, .fab {
+    line-height: $line-height;
 }
 
 // Font size normalization. Required on select because Chrome on Mac gives it a smaller font size to keep the
